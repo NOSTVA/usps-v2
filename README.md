@@ -5,15 +5,17 @@ The following route will calculate the shipping label price and return an estima
 - request:
 ```code
 POST api/usps/domestic-label/price
-application/json
+Content-Type: application/json
 {
   shippingAddressId: "XXXXXXXXXX",
   productId: "XXXXXXXXXX"
 }
+
 ```
 - response:
 > totalPrice can be used to calculate the order's total amount on checkout final stage.
 ```code
+Content-Type: application/json
 {
     "totalPrice": 5.84,
 }
