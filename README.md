@@ -12,7 +12,7 @@ application/json
 }
 ```
 - response:
-> The totalPrice will be used to calculate the order's total amount on checkout final stage.
+> totalPrice can be used to calculate the order's total amount on checkout final stage.
 ```
 {
     "totalPrice": 5.84,
