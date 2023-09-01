@@ -51,8 +51,8 @@ Content-Type: application/json
       invoiceNumber: "string", //Invoice Number
       licenseNumber: "string", //License Number
       certificateNumber: "string", //Certificate Number
-      customsContentType: "string" // options ["MERCHANDISE", "GIFT", "DOCUMENT", "COMMERCIAL_SAMPLE", "RETURNED_GOODS", "OTHER", "HUMANITARIAN_DONATIONS", "DANGEROUS_GOODS", "CREMATED_REMAINS", "NON_NEGOTIABLE_DOCUMENT", "MEDICAL_SUPPLIES", "PHARMACEUTICALS"],
-      contents: {
+      customsContentType: "string", // options ["MERCHANDISE", "GIFT", "DOCUMENT", "COMMERCIAL_SAMPLE", "RETURNED_GOODS", "OTHER", "HUMANITARIAN_DONATIONS", "DANGEROUS_GOODS", "CREMATED_REMAINS", "NON_NEGOTIABLE_DOCUMENT", "MEDICAL_SUPPLIES", "PHARMACEUTICALS"],
+      contents: 
         [
           {
             itemDescription: "string", //Description of the item.
@@ -62,7 +62,6 @@ Content-Type: application/json
             countryofOrigin: "string", //2 digit Alpha Country Code defined by ISO is required for international address
           }
         ]
-      }
     }
   }
 }
