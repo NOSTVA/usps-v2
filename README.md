@@ -10,7 +10,7 @@ When creating a new product, require the seller to fill the following fields as 
   processingCategory: "string", //options: ["FLATS", "MACHINABLE", "IRREGULAR", "NON_MACHINABLE"],
   rateIndicator: "string",
     /*
-      rateIndicator options:
+      rateIndicator options: [DR - SP]
       DR - Dimensional Rectangular
       SP - Single Piece
     */
