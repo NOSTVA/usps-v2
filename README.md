@@ -32,7 +32,7 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 
  2. Use (Calculate Domestic Label Price) or (Calculate International Label Price) to get the total price for shipping label and make payment for seller.
  3. If payment is successfully completed, use (Create Domestic Label) or (Calculate International Label Price) to create the shipping label for the seller. 
- > Note that the created shipping label's tracking number will be automatically saved to the order's information for further use.==
+ > Note that the created shipping label's tracking number will be automatically saved to the order's information for further use.
 
 ---
 
