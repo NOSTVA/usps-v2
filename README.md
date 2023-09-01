@@ -7,9 +7,8 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 
 
 ### 1. Purchasing a domestic/international shipping label.
-Provide a form to the seller to collect order's shipping information:
-1. Incase of purchasing a domestic label.
-
+1. Provide a form to the seller to collect order's shipping information:
+- Incase of collecting shipping information for domestic label, use the following request:
 ```javascript
 {
   weight: "number", //weight in pounds
@@ -27,21 +26,12 @@ Provide a form to the seller to collect order's shipping information:
     */
 }
 ```
-example: 
-```json
-{
-    "weight": 7,
-    "length": 9,
-    "width": 0.25,
-    "height": 6,
-    "mailClass": "PRIORITY_MAIL",
-    "mailClass": "PRIORITY_MAIL_INTERNATIONAL",
-    "processingCategory": "MACHINABLE",
-    "rateIndicator": "DR",
-}
-```
+- Incase of collecting shipping information for international label, use the following request:
 
-2. Incase of purchacing a International Label.
+ 2. Use (Calculate Domestic Label Price) or (Calculate International Label Price) to get the total price for shipping label and make payment for seller.
+ 3. If payment is successfully completed, use (Create Domestic Label) or (Calculate International Label Price) to create the shipping label for the seller. 
+ **note that the created shipping label's tracking number will be automatically saved to the order's information for further use.**
+
 
 ## Yallalive Shipping Labels API
 ### Calculate Domestic Label Price:
