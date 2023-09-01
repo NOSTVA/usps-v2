@@ -187,7 +187,7 @@ Content-Type: application/json
 
 - **Request**:
 ```javascript
-DELETE api/usps/domestic-label/{trackingNumber}
+DELETE api/usps/domestic-label/{orderId}
 ```
 - **Response**: operation successful
 
