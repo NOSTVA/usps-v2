@@ -7,7 +7,7 @@ When Order's status is paid, Seller have two options: **Ship** and **Refund**.
 
 
 ## 1. Purchase (domestic/international shipping label).
-Seller update the order's information with the following inputs:
+Provide a form to the seller in order to update the Order's shipping information:
 1. Incase of purchacing a Domestic Label.
 
 ```javascript
@@ -26,9 +26,7 @@ Seller update the order's information with the following inputs:
       SP - Single Piece
     */
 }
-
 ```
-
 example: 
 ```json
 {
@@ -42,6 +40,9 @@ example:
     "rateIndicator": "DR",
 }
 ```
+
+2. Incase of purchacing a International Label.
+
 ## Yallalive Shipping Labels API
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
