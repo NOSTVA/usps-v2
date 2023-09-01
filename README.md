@@ -2,8 +2,6 @@
 When creating a new product, require the seller to fill the following fields as product's package description.
 ```javascript
 {
-  originZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
-  destinationZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
   weight: "number", //weight in pounds
   length: "number", //length in inches
   width: "number", //width in inches
