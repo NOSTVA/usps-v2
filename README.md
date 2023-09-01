@@ -52,7 +52,9 @@ Content-Type: application/json
 }
 ```
 totalBasePrice can be used to calculate the order's total amount on checkout final stage.
+
 ---
+
 ### Create domestic-label.
 - request:
 ```javascript
