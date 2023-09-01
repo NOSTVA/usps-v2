@@ -1,13 +1,13 @@
 ## Product Package Description Requirements
-```code
 the following fields are required for package description section to successfully register a product.
+```json
 {
-  originZIPCode: "string"  //^\d{5}(?:[-\s]\d{4})?$
-  destinationZIPCode: "string"  //^\d{5}(?:[-\s]\d{4})?$
-  weight: "number" //weight in pounds
-  length: "number" //length in inches
-  width: "number" //width in inches
-  height: "number" //height in inches
+  originZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
+  destinationZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
+  weight: "number", //weight in pounds
+  length: "number", //length in inches
+  width: "number", //width in inches
+  height: "number", //height in inches
   mailClass: "string"
 }
 
