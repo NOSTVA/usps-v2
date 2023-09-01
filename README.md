@@ -31,6 +31,25 @@ Content-Type: application/json
 }
 ```
 - Incase of collecting shipping information for international label, use the following route:
+```javascript
+PUT api/orders/orders/{orderId}
+
+Content-Type: application/json
+{
+  shippingDetails: {
+      packageDescription: {
+        weight: "number", //weight in pounds
+        length: "number", //length in inches
+        width: "number", //width in inches
+        height: "number", //height in inches
+        domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
+        internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+        processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
+        rateIndicator: "string", //rateIndicator options: [DR - SP] (DR - Dimensional, Rectangular SP - Single Piece)
+    }
+  }
+}
+```
 
  2. Use (Calculate Domestic Label Price) or (Calculate International Label Price) to get the total price for shipping label and make payment for seller.
  3. If payment is successfully completed, use (Create Domestic Label) or (Calculate International Label Price) to create the shipping label for the seller. 
