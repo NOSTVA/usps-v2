@@ -80,12 +80,7 @@ Use the following route to calculate the shipping label price for an order, It s
 
 - **Request**:
 ```javascript
-POST api/usps/domestic-label/price
-
-Content-Type: application/json
-{
-  orderId: "XXXXXXXXXX",
-}
+POST api/usps/domestic-label/price/{orderId}
 ```
 - **Response**:
 ```javascript
@@ -99,13 +94,7 @@ Content-Type: application/json
 
 - **Request**:
 ```javascript
-POST api/usps/international-label/price
-
-Content-Type: application/json
-{
-  orderId: "XXXXXXXXXX",
-}
-
+POST api/usps/international-label/price/{orderId}
 ```
 - **Response**:
 ```javascript
@@ -121,12 +110,7 @@ Content-Type: application/json
 
 - **Request**:
 ```javascript
-POST api/usps/domestic-label
-
-Content-Type: application/json
-{
-  orderId: "XXXXXXXXXX",
-}
+POST api/usps/domestic-label/{orderId}
 ```
 - **Response**:
 ```javascript
@@ -174,12 +158,7 @@ Content-Transfer-Encoding: encode
 
 - **Request**:
 ```javascript
-POST api/usps/return-label
-
-Content-Type: application/json
-{
-  orderId: "XXXXXXXXXX",
-}
+POST api/usps/return-label/{orderId}
 ```
 - **Response**: same as previous.
 
@@ -189,7 +168,10 @@ Content-Type: application/json
 ```javascript
 DELETE api/usps/domestic-label/{orderId}
 ```
-- **Response**: operation successful
+- **Response**:
+```code
+200 Successful Operation
+```
 
 ### Track both Domestic and International label
 - **Request**:
