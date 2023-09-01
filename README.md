@@ -6,7 +6,8 @@ When creating a new product, require the seller to fill the following fields as 
   length: "number", //length in inches
   width: "number", //width in inches
   height: "number", //height in inches
-  mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
+  domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
+  internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
   processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
   rateIndicator: "string",
     /*
@@ -26,6 +27,7 @@ example:
     "width": 0.25,
     "height": 6,
     "mailClass": "PRIORITY_MAIL",
+    "mailClass": "PRIORITY_MAIL_INTERNATIONAL",
     "processingCategory": "MACHINABLE",
     "rateIndicator": "DR",
 }
