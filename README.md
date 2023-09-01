@@ -77,7 +77,7 @@ Content-Type: application/json
 
 ## Calculate Shipping Label Price
 
-### Calculate Domestic Label Price:
+### 1. Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
 - **Request**:
 ```javascript
@@ -91,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### Calculate International Label Price:
+### 2. Calculate International Label Price:
 - **Request**:
 ```javascript
 POST api/usps/international-label/price/{orderId}
