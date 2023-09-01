@@ -31,8 +31,8 @@ example:
 }
 ```
 ## Yallalive Shipping Labels API
-### Calculate domestic-label price for an Order:
-The following route will calculate the shipping label price and return an estimated price amount to be displayed to the user in shipping page before confirming the checkout.
+### Calculate Domestic Label Price:
+Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
 - request:
 ```javascript
 POST api/usps/domestic-label/price
