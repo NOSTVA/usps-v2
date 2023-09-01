@@ -77,7 +77,7 @@ Content-Type: application/json
 
 ---
 
-### Create domestic-label.
+### Create Domestic Label.
 - request:
 ```javascript
 POST api/usps/domestic-label
@@ -128,5 +128,24 @@ Content-Encoding: gzip
 Content-Transfer-Encoding: encode
 {file data}
 ```
+
+### Create Returns Domestic Label.
+- request:
+```javascript
+POST api/usps/return-label
+
+Content-Type: application/json
+{
+  orderId: "XXXXXXXXXX",
+}
+```
+- response: same as previous.
+
+### Cancel Domestic Label.
+- request:
+```javascript
+DELETE api/usps/domestic-label/{trackingNumber}
+```
+- response: operation successful
 
 
