@@ -22,8 +22,7 @@ Content-Type: application/json
         length: "number", //length in inches
         width: "number", //width in inches
         height: "number", //height in inches
-        domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
-        internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+        mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
         processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
         rateIndicator: "string", //rateIndicator options: [DR - SP] (DR - Dimensional, Rectangular SP - Single Piece)
     }
