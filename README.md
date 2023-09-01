@@ -1,6 +1,6 @@
 ## Product Package Description Requirements
 the following fields are required for package description section to successfully register a product.
-```json
+```javascript
 {
   "originZIPCode": "string",  //^\d{5}(?:[-\s]\d{4})?$
   "destinationZIPCode": "string",  //^\d{5}(?:[-\s]\d{4})?$
