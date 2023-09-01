@@ -51,7 +51,7 @@ Content-Type: application/json
 ```javascript
 Content-Type: application/json
 {
-    "totalBasePrice": 11.06
+    "totalPrice": 11.06
 }
 ```
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 ```javascript
 Content-Type: application/json
 {
-    "totalBasePrice": 14.96
+    "totalPrice": 14.96
 }
 ```
 
