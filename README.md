@@ -148,4 +148,24 @@ DELETE api/usps/domestic-label/{trackingNumber}
 ```
 - response: operation successful
 
+---
+
+## Track Shipping Label.
+### Track both Domestic and International label
+- request:
+```javascript
+GET api/usps/tracking/{trackingNumber}
+```
+- response:
+```javascript
+{
+    TrackResults: {
+        RequestSeqNumber: null,
+        TrackInfo: {
+            @ID: "XXXXXXXXXXXXXXXXXXXX",
+            TrackSummary: "USPS is now in possession of your item as of 7:31 am on February 15, 2023 in RICHMOND, VA 23227."
+        }
+    }
+}
+```
 
