@@ -12,20 +12,22 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 
 - **Request**:
 ```javascript
+PUT api/order/orders/{orderId}
+
+Content-Type: application/json
 {
-  weight: "number", //weight in pounds
-  length: "number", //length in inches
-  width: "number", //width in inches
-  height: "number", //height in inches
-  domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
-  internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
-  processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
-  rateIndicator: "string",
-    /*
-      rateIndicator options: [DR - SP]
-      DR - Dimensional Rectangular
-      SP - Single Piece
-    */
+  shippingDetails: {
+      packageDescription: {
+        weight: "number", //weight in pounds
+        length: "number", //length in inches
+        width: "number", //width in inches
+        height: "number", //height in inches
+        domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
+        internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+        processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
+        rateIndicator: "string", //rateIndicator options: [DR - SP] (DR - Dimensional, Rectangular SP - Single Piece)
+    }
+  }
 }
 ```
 - Incase of collecting shipping information for international label, use the following request:
