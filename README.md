@@ -31,7 +31,8 @@ example:
 }
 ```
 
-## Calculate domestic-label price for an Order:
+## USPS Shipping Labels API
+### Calculate domestic-label price for an Order:
 The following route will calculate the shipping label price and return an estimated price amount to be displayed to the user in shipping page before confirming the checkout.
 - request:
 ```javascript
