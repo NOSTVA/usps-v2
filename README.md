@@ -7,7 +7,7 @@ When creating a new product, require the seller to fill the following fields as 
   width: "number", //width in inches
   height: "number", //height in inches
   mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
-  processingCategory: "string", //options: ["FLATS", "MACHINABLE", "IRREGULAR", "NON_MACHINABLE"],
+  processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
   rateIndicator: "string",
     /*
       rateIndicator options: [DR - SP]
