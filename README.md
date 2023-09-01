@@ -18,6 +18,19 @@ When creating a new product, require the seller to fill the following fields as 
 
 ```
 
+example: 
+```json
+{
+    "weight": 7,
+    "length": 9,
+    "width": 0.25,
+    "height": 6,
+    "mailClass": "PRIORITY_MAIL",
+    "processingCategory": "MACHINABLE",
+    "rateIndicator": "DR",
+}
+```
+
 ## Calculate domestic-label price for an Order:
 The following route will calculate the shipping label price and return an estimated price amount to be displayed to the user in shipping page before confirming the checkout.
 - request:
