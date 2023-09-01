@@ -41,25 +41,25 @@ Content-Type: application/json
         length: "number", //length in inches
         width: "number", //width in inches
         height: "number", //height in inches
-        mailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+        mailClass: "string", //options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
         processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
         rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
     },
   customsForm: {
-      restrictionType: "string", // options ["QUARANTINE", "SANITARY_INSPECTION", "PHYTOSANITARY_INSPECTION", "OTHER"]
+      restrictionType: "string", //options ["QUARANTINE", "SANITARY_INSPECTION", "PHYTOSANITARY_INSPECTION", "OTHER"]
       AESITN: "string", //AES/ITN Exemption is a code that indicates the reason why you did not need to file electronic export information.
       invoiceNumber: "string", //Invoice Number
       licenseNumber: "string", //License Number
       certificateNumber: "string", //Certificate Number
-      customsContentType: "string",
+      customsContentType: "string" // options ["MERCHANDISE", "GIFT", "DOCUMENT", "COMMERCIAL_SAMPLE", "RETURNED_GOODS", "OTHER", "HUMANITARIAN_DONATIONS", "DANGEROUS_GOODS", "CREMATED_REMAINS", "NON_NEGOTIABLE_DOCUMENT", "MEDICAL_SUPPLIES", "PHARMACEUTICALS"],
       contents: {
         [
           {
-            itemDescription: "string",
-            itemQuantity: "number",
-            itemValue: "number",
-            itemWeight: "number",
-            countryofOrigin: "string",
+            itemDescription: "string", //Description of the item.
+            itemQuantity: "number", //Quantity of the item. Integer value required.
+            itemValue: "number", //Value/Price of Item
+            itemWeight: "number", //weight in pounds
+            countryofOrigin: "string", //2 digit Alpha Country Code defined by ISO is required for international address
           }
         ]
       }
