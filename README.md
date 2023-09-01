@@ -8,7 +8,8 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 
 ### 1. Purchasing a domestic/international shipping label.
 1. Provide a form to the seller to collect order's shipping information:
-- Incase of collecting shipping information for domestic label, use the following request:
+- Incase of collecting shipping information for domestic label, use the following
+**request**:
 ```javascript
 {
   weight: "number", //weight in pounds
@@ -36,7 +37,7 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 ## Yallalive Shipping Labels API
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
-Request:
+- **Request**:
 ```javascript
 POST api/usps/domestic-label/price
 
