@@ -3,6 +3,7 @@ The following route will calculate the shipping label price and return an estima
 - request:
 ```code
 POST api/usps/domestic-label/price
+
 Content-Type: application/json
 {
   shippingAddressId: "XXXXXXXXXX",
