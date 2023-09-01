@@ -41,10 +41,28 @@ Content-Type: application/json
         length: "number", //length in inches
         width: "number", //width in inches
         height: "number", //height in inches
-        domesticMailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
-        internationalMailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+        mailClass: "string", // options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
         processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
-        rateIndicator: "string", //rateIndicator options: [DR - SP] (DR - Dimensional, Rectangular SP - Single Piece)
+        rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
+    },
+  customsForm: {
+      restrictionType: "string", // options ["QUARANTINE", "SANITARY_INSPECTION", "PHYTOSANITARY_INSPECTION", "OTHER"]
+      AESITN: "string", //AES/ITN Exemption is a code that indicates the reason why you did not need to file electronic export information.
+      invoiceNumber: "string", //Invoice Number
+      licenseNumber: "string", //License Number
+      certificateNumber: "string", //Certificate Number
+      customsContentType: "string",
+      contents: {
+        [
+          {
+            itemDescription: "string",
+            itemQuantity: "number",
+            itemValue: "number",
+            itemWeight: "number",
+            countryofOrigin: "string",
+          }
+        ]
+      }
     }
   }
 }
