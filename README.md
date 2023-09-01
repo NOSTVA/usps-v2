@@ -1,14 +1,14 @@
 ## Seller Orders Menu: Shipping Page 
-When Order's status is paid, Seller have two options: **Ship** and **Refund**.
+When the order's status is paid, the seller have two options(buttons): **Ship** and **Refund**.
 
-**Ship** option should take the seller to shipping page where seller can either 
-1. purchase (domestic/international shipping label).
+**Ship** option should take the seller to a shipping page where seller can either 
+1. purchase domestic/international shipping label.
 2. add tracking number manually to order.
 
 
-## 1. Purchase (domestic/international shipping label).
-Provide a form to the seller in order to update the Order's shipping information:
-1. Incase of purchacing a Domestic Label.
+### 1. Purchasing a domestic/international shipping label.
+Provide a form to the seller to collect order's shipping information:
+1. Incase of purchasing a domestic label.
 
 ```javascript
 {
