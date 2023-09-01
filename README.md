@@ -194,7 +194,7 @@ DELETE api/usps/domestic-label/{trackingNumber}
 ### Track both Domestic and International label
 - **Request**:
 ```javascript
-GET api/usps/tracking/{trackingNumber}
+GET api/usps/tracking/{orderId}
 ```
 - **Response**:
 ```javascript
