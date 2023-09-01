@@ -25,7 +25,7 @@ Content-Type: application/json
       mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
       processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
       rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
-  }
+    }
   }
 }
 ```
