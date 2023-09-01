@@ -2,13 +2,13 @@
 the following fields are required for package description section to successfully register a product.
 ```javascript
 {
-  "originZIPCode": "string",  //^\d{5}(?:[-\s]\d{4})?$
-  "destinationZIPCode": "string",  //^\d{5}(?:[-\s]\d{4})?$
-  "weight": "number", //weight in pounds
-  "length": "number", //length in inches
-  "width": "number", //width in inches
-  "height": "number", //height in inches
-  "mailClass": "string"
+  originZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
+  destinationZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
+  weight: "number", //weight in pounds
+  length: "number", //length in inches
+  width: "number", //width in inches
+  height: "number", //height in inches
+  mailClass: "string"
 }
 
 ```
