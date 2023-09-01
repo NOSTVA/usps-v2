@@ -8,11 +8,11 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 
 ### 1. Purchasing a domestic/international shipping label.
 1. Provide a form to the seller to collect order's shipping information:
-- Incase of collecting shipping information for domestic label, use the following
+- Incase of collecting shipping information for domestic label, use the following route to update order's information.
 
 - **Request**:
 ```javascript
-PUT api/order/orders/{orderId}
+PUT api/orders/orders/{orderId}
 
 Content-Type: application/json
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
   }
 }
 ```
-- Incase of collecting shipping information for international label, use the following request:
+- Incase of collecting shipping information for international label, use the following route:
 
  2. Use (Calculate Domestic Label Price) or (Calculate International Label Price) to get the total price for shipping label and make payment for seller.
  3. If payment is successfully completed, use (Create Domestic Label) or (Calculate International Label Price) to create the shipping label for the seller. 
