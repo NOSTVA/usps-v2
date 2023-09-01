@@ -1,4 +1,4 @@
-## Seller Orders Menu: Shipping Page 
+## Seller Orders => Shipping Page 
 When the order's status is paid, the seller have two options(buttons): **Ship** and **Refund**.
 
 **Ship** option should take the seller to a shipping page where seller can either 
