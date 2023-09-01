@@ -9,7 +9,8 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 ### 1. Purchasing a domestic/international shipping label.
 1. Provide a form to the seller to collect order's shipping information:
 - Incase of collecting shipping information for domestic label, use the following
-**request**:
+
+- **Request**:
 ```javascript
 {
   weight: "number", //weight in pounds
@@ -33,10 +34,13 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
  3. If payment is successfully completed, use (Create Domestic Label) or (Calculate International Label Price) to create the shipping label for the seller. 
  **note that the created shipping label's tracking number will be automatically saved to the order's information for further use.**
 
+---
 
 ## Yallalive Shipping Labels API
+
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
+
 - **Request**:
 ```javascript
 POST api/usps/domestic-label/price
@@ -47,7 +51,7 @@ Content-Type: application/json
   productId: "XXXXXXXXXX"
 }
 ```
-Response:
+- **Response**:
 ```javascript
 Content-Type: application/json
 {
@@ -56,7 +60,8 @@ Content-Type: application/json
 ```
 
 ### Calculate International Label Price:
-- request:
+
+- **Request**:
 ```javascript
 POST api/usps/international-label/price
 
@@ -67,7 +72,7 @@ Content-Type: application/json
 }
 
 ```
-- response:
+- **Response**:
 ```javascript
 Content-Type: application/json
 {
@@ -77,8 +82,9 @@ Content-Type: application/json
 
 ---
 
-### Create Domestic Label.
-- request:
+### Create Domestic Label:
+
+- **Request**:
 ```javascript
 POST api/usps/domestic-label
 
@@ -87,7 +93,7 @@ Content-Type: application/json
   orderId: "XXXXXXXXXX",
 }
 ```
-- response:
+- **Response**:
 ```javascript
 Content-Type: application/json
 {
@@ -129,8 +135,9 @@ Content-Transfer-Encoding: encode
 {file data}
 ```
 
-### Create Returns Domestic Label.
-- request:
+### Create Returns Domestic Label:
+
+- **Request**:
 ```javascript
 POST api/usps/return-label
 
@@ -139,23 +146,22 @@ Content-Type: application/json
   orderId: "XXXXXXXXXX",
 }
 ```
-- response: same as previous.
+- **Response**: same as previous.
 
-### Cancel Domestic Label.
-- request:
+### Cancel Domestic Label:
+
+- **Request**:
 ```javascript
 DELETE api/usps/domestic-label/{trackingNumber}
 ```
-- response: operation successful
-
----
+- **Response**: operation successful
 
 ### Track both Domestic and International label
-- request:
+- **Request**:
 ```javascript
 GET api/usps/tracking/{trackingNumber}
 ```
-- response:
+- **Response**:
 ```javascript
 {
     TrackResults: {
