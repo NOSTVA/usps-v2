@@ -84,8 +84,7 @@ POST api/usps/domestic-label/price
 
 Content-Type: application/json
 {
-  shippingAddressId: "XXXXXXXXXX",
-  productId: "XXXXXXXXXX"
+  orderId: "XXXXXXXXXX",
 }
 ```
 - **Response**:
@@ -104,8 +103,7 @@ POST api/usps/international-label/price
 
 Content-Type: application/json
 {
-  shippingAddressId: "XXXXXXXXXX",
-  productId: "XXXXXXXXXX"
+  orderId: "XXXXXXXXXX",
 }
 
 ```
