@@ -35,6 +35,7 @@ example:
 ## Yallalive Shipping Labels API
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
+totalBasePrice can be used to calculate the order's total amount on checkout final stage.
 - request:
 ```javascript
 POST api/usps/domestic-label/price
@@ -53,7 +54,26 @@ Content-Type: application/json
     "totalBasePrice": 11.06
 }
 ```
-totalBasePrice can be used to calculate the order's total amount on checkout final stage.
+
+### Calculate International Label Price:
+- request:
+```javascript
+POST api/usps/international-label/price
+
+Content-Type: application/json
+{
+  shippingAddressId: "XXXXXXXXXX",
+  productId: "XXXXXXXXXX"
+}
+
+```
+- response:
+```javascript
+Content-Type: application/json
+{
+    "totalBasePrice": 14.96
+}
+```
 
 ---
 
