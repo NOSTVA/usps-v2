@@ -73,11 +73,12 @@ Content-Type: application/json
 
 ---
 
-## Yallalive Shipping Labels API
+# Yallalive Shipping Labels API
+
+## Calculate Shipping Label Price
 
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
-
 - **Request**:
 ```javascript
 POST api/usps/domestic-label/price/{orderId}
@@ -91,7 +92,6 @@ Content-Type: application/json
 ```
 
 ### Calculate International Label Price:
-
 - **Request**:
 ```javascript
 POST api/usps/international-label/price/{orderId}
@@ -106,8 +106,9 @@ Content-Type: application/json
 
 ---
 
-### Create Domestic Label:
+## Create Shipping Label
 
+### Create Domestic Label:
 - **Request**:
 ```javascript
 POST api/usps/domestic-label/{orderId}
@@ -155,15 +156,24 @@ Content-Transfer-Encoding: encode
 ```
 
 ### Create Returns Domestic Label:
-
 - **Request**:
 ```javascript
 POST api/usps/return-label/{orderId}
 ```
 - **Response**: same as previous.
 
-### Cancel Domestic Label:
+### Create International Label:
+- **Request**:
+```javascript
+POST api/usps/international-label/{orderId}
+```
+- **Response**: same as previous.
 
+---
+
+## Cancel Shipping Label
+
+### Cancel Domestic Label:
 - **Request**:
 ```javascript
 DELETE api/usps/domestic-label/{orderId}
@@ -172,6 +182,20 @@ DELETE api/usps/domestic-label/{orderId}
 ```code
 200 Successful Operation
 ```
+
+### Cancel International Label:
+- **Request**:
+```javascript
+DELETE api/usps/international-label/{orderId}
+```
+- **Response**:
+```code
+200 Successful Operation
+```
+
+---
+
+## Track Shipping Label
 
 ### Track both Domestic and International label
 - **Request**:
