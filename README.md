@@ -75,7 +75,7 @@ Content-Type: application/json
 
 # Yallalive Shipping Labels API
 
-## Calculate Shipping Label Price
+## Shipping Label Price
 
 ### Calculate Domestic Label Price:
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 ---
 
-## Create Shipping Label
+## Shipping Label Creation
 
 ### Create Domestic Label:
 - **Request**:
@@ -171,7 +171,7 @@ POST api/usps/international-label/{orderId}
 
 ---
 
-## Cancel Shipping Label
+## Shipping Label Cancellation
 
 ### Cancel Domestic Label:
 - **Request**:
@@ -195,7 +195,7 @@ DELETE api/usps/international-label/{orderId}
 
 ---
 
-## Track Shipping Label
+## Track Shipping Label Tracking
 
 ### Track both Domestic and International label
 - **Request**:
