@@ -45,11 +45,27 @@ Content-Type: application/json
 
 ```
 - response:
-> totalPrice can be used to calculate the order's total amount on checkout final stage.
+> totalBasePrice can be used to calculate the order's total amount on checkout final stage.
 ```code
 Content-Type: application/json
 {
-    "totalPrice": 5.84,
+    "totalBasePrice": 11.06,
+    "rates": [
+        {
+            "SKU": "DUXP0XXXXC05070",
+            "description": "USPS Ground Advantage Nonmachinable Single-piece",
+            "priceType": "COMMERCIAL",
+            "price": 11.06,
+            "weight": 7,
+            "dimWeight": 0,
+            "fees": [],
+            "startDate": "2023-07-09",
+            "endDate": "",
+            "warnings": [],
+            "mailClass": "USPS_GROUND_ADVANTAGE",
+            "zone": "05"
+        }
+    ]
 }
 ```
 
