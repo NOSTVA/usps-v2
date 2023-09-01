@@ -17,15 +17,15 @@ PUT api/orders/orders/{orderId}
 Content-Type: application/json
 {
   shippingDetails: {
-      packageDescription: {
-        weight: "number", //weight in pounds
-        length: "number", //length in inches
-        width: "number", //width in inches
-        height: "number", //height in inches
-        mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
-        processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
-        rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
-    }
+    packageDescription: {
+      weight: "number", //weight in pounds
+      length: "number", //length in inches
+      width: "number", //width in inches
+      height: "number", //height in inches
+      mailClass: "string", // options: ["PRIORITY_MAIL", "PRIORITY_MAIL_EXPRESS", "PARCEL_SELECT", "PARCEL_SELECT_LIGHTWEIGHT"]
+      processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
+      rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
+  }
   }
 }
 ```
@@ -36,16 +36,16 @@ PUT api/orders/orders/{orderId}
 Content-Type: application/json
 {
   shippingDetails: {
-      packageDescription: {
-        weight: "number", //weight in pounds
-        length: "number", //length in inches
-        width: "number", //width in inches
-        height: "number", //height in inches
-        mailClass: "string", //options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
-        processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
-        rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
+    packageDescription: {
+      weight: "number", //weight in pounds
+      length: "number", //length in inches
+      width: "number", //width in inches
+      height: "number", //height in inches
+      mailClass: "string", //options: ["FIRST-CLASS_PACKAGE_INTERNATIONAL_SERVICE", "PRIORITY_MAIL_INTERNATIONAL", "PRIORITY_MAIL_EXPRESS_INTERNATIONAL", "GLOBAL_EXPRESS_GUARANTEED"]
+      processingCategory: "string", //options: ["FLATS", "MACHINABLE", "NON_MACHINABLE"],
+      rateIndicator: "string", //rateIndicator options: [SP - DR] (DR - Dimensional, Rectangular SP - Single Piece)
     },
-  customsForm: {
+    customsForm: {
       restrictionType: "string", //options ["QUARANTINE", "SANITARY_INSPECTION", "PHYTOSANITARY_INSPECTION", "OTHER"]
       AESITN: "string", //AES/ITN Exemption is a code that indicates the reason why you did not need to file electronic export information.
       invoiceNumber: "string", //Invoice Number
