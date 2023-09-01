@@ -1,5 +1,15 @@
-## Product Package Description Requirements
-When creating a new product, require the seller to fill the following fields as product's package description.
+## Seller Orders Menu: Shipping Page 
+When Order's status is paid, Seller have two options: **Ship** and **Refund**.
+
+**Ship** option should take the seller to shipping page where seller can either 
+1. purchase (domestic/international shipping label).
+2. add tracking number manually to order.
+
+
+## 1. Purchase (domestic/international shipping label).
+Seller update the order's information with the following inputs:
+1. Incase of purchacing a Domestic Label.
+
 ```javascript
 {
   weight: "number", //weight in pounds
