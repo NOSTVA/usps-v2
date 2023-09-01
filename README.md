@@ -1,5 +1,5 @@
 ## Product Package Description Requirements
-When creating a new product, Require the product owner to fill the following fields as product's package description.
+When creating a new product, require the seller to fill the following fields as product's package description.
 ```javascript
 {
   originZIPCode: "string",  //^\d{5}(?:[-\s]\d{4})?$
@@ -75,7 +75,7 @@ When creating a new product, Require the product owner to fill the following fie
 ## Calculate domestic-label price for an Order:
 The following route will calculate the shipping label price and return an estimated price amount to be displayed to the user in shipping page before confirming the checkout.
 - request:
-```rest
+```javascript
 POST api/usps/domestic-label/price
 
 Content-Type: application/json
