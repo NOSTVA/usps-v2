@@ -45,13 +45,13 @@ Content-Type: application/json
 
 ```
 - response:
-> totalBasePrice can be used to calculate the order's total amount on checkout final stage.
 ```javascript
 Content-Type: application/json
 {
     "totalBasePrice": 11.06
 }
 ```
+totalBasePrice can be used to calculate the order's total amount on checkout final stage.
 
 
 
