@@ -150,7 +150,6 @@ DELETE api/usps/domestic-label/{trackingNumber}
 
 ---
 
-## Track Shipping Label.
 ### Track both Domestic and International label
 - request:
 ```javascript
