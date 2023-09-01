@@ -38,6 +38,7 @@ When the order's status is paid, the seller have two options(buttons): **Ship** 
 Use the following route to calculate the shipping label price for an order, It should return an estimated price amount to be displayed to the buyer in the shipping page before confirming the checkout.
 - request:
 ```javascript
+/* REQUEST */
 POST api/usps/domestic-label/price
 
 Content-Type: application/json
@@ -46,9 +47,7 @@ Content-Type: application/json
   productId: "XXXXXXXXXX"
 }
 
-```
-- response:
-```javascript
+/* RESPONSE */
 Content-Type: application/json
 {
     "totalPrice": 11.06
