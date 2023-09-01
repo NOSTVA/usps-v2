@@ -68,42 +68,41 @@ Content-Type: application/json
 ```javascript
 Content-Type: application/json
 {
-    "trackingNumber": "9205590109769900012613",
-    "labelAddress": {
-        "streetAddress": "STE 150",
-        "secondaryAddress": "1100 WYOMING ST",
-        "city": "SAINT LOUIS",
-        "state": "MO",
-        "ZIPCode": "63118",
-        "ZIPPlus4": "2628",
-        "firstName": "JOE",
-        "lastName": "DOE",
-        "ignoreBadAddress": false
+    trackingNumber: "9205590109769900012613",
+    labelAddress: {
+        streetAddress: "STE 150",
+        secondaryAddress: "1100 WYOMING ST",
+        city: "SAINT LOUIS",
+        state: "MO",
+        ZIPCode: "63118",
+        ZIPPlus4: "2628",
+        firstName: "JOE",
+        lastName: "DOE",
+        ignoreBadAddress: false
     },
-    "routingInformation": "420631182628",
-    "postage": 7.64,
-    "extraServices": [
+    routingInformation: "420631182628",
+    postage: 7.64,
+    extraServices: [
         {
-            "name": "USPS Tracking",
-            "price": 0
+            name: "USPS Tracking",
+            price: 0
         }
     ],
-    "zone": "01",
-    "commitment": {
-        "name": "1 Days",
-        "scheduleDeliveryDate": "2023-05-27"
+    zone: "01",
+    commitment: {
+        name: "1 Days",
+        scheduleDeliveryDate: "2023-05-27"
     },
-    "weightUOM": "LB",
-    "weight": 0.5,
-    "fees": [],
-    "SKU": "DPXX0XXXXC01005"
+    weightUOM: "LB",
+    weight: 0.5,
+    fees: [],
+    SKU: "DPXX0XXXXC01005"
 }
 
 Content-Type: application/pdf
 File Name: label.pdf
 Content-Encoding: gzip
 Content-Transfer-Encoding: encode
-
 {file data}
 ```
 
