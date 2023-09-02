@@ -88,6 +88,7 @@ POST api/usps/domestic-label/price/{orderId}
 Content-Type: application/json
 {
     "totalPrice": 11.06
+    ...
 }
 ```
 
@@ -101,6 +102,7 @@ POST api/usps/international-label/price/{orderId}
 Content-Type: application/json
 {
     "totalPrice": 14.96
+    ...
 }
 ```
 
