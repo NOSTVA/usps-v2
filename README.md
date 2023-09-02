@@ -217,3 +217,26 @@ GET api/usps/tracking/{orderId}
 }
 ```
 
+---
+
+# Order Payment Refund API
+## Partial Refund:
+- **Request**:
+```javascript
+POST /api/stripe/refund/{orderId}
+
+Content-Type: application/json
+{
+    "amount": "XXXXX",
+}
+```
+- **Response**
+
+## Full Refund:
+- **Request**:
+```javascript
+POST /api/stripe/refund/{orderId}
+```
+- **Response**
+
+
