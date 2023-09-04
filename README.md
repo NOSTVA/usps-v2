@@ -234,7 +234,21 @@ Content-Type: application/json
 - **Request**:
 ```javascript
 POST /api/stripe/refund/{orderId}
+
 ```
-- **Response**
+
+## Buyer Orders => Return Order Page 
+- **Request**:
+```javascript
+POST /api/returns/orders/{orderId}
+
+Content-Type: application/json
+{
+    "reason": "string",
+    "note": "string",
+}
+
+file: ["image/jpeg", "image/png", "image/jpg", "image/webp"]
+```
 
 
