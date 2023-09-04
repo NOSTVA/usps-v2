@@ -207,13 +207,11 @@ GET api/usps/tracking/{orderId}
 - **Response**:
 ```javascript
 {
-    TrackResults: {
-        RequestSeqNumber: null,
-        TrackInfo: {
-            @ID: "XXXXXXXXXXXXXXXXXXXX",
-            TrackSummary: "USPS is now in possession of your item as of 7:31 am on February 15, 2023 in RICHMOND, VA 23227."
-        }
-    }
+  trackingNumber: "XXXXXXXXXXXXX",
+  expectedDeliveryDate: "2023-09-16",
+  expectedDeliveryTime: "string",
+  guaranteedDeliveryDate: "2023-09-17",
+  eventSummaries: ["USPS is now in possession of your item as of 7:31 am on Septemper 15, 2023 in RICHMOND, VA 23227."]
 }
 ```
 
