@@ -238,9 +238,11 @@ POST /api/stripe/refund/{orderId}
 ```
 
 ## Buyer Orders => Return Order Page 
+
+### Submit order return request:
 - **Request**:
 ```javascript
-POST /api/returns/orders/{orderId}
+POST /api/returns/orders/{shopId}/{orderId}
 
 Content-Type: application/json
 {
@@ -248,7 +250,14 @@ Content-Type: application/json
     "note": "string",
 }
 
-file: ["image/jpeg", "image/png", "image/jpg", "image/webp"]
+file:  ["image/jpeg", "image/png", "image/jpg", "image/webp"]
+*name field should be named "image".*
+```
+
+### Get all shop's order requests:
+- **Request**:
+```javascript
+GET /api/returns/orders/all/{shopId}
 ```
 
 
