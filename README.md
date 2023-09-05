@@ -237,7 +237,7 @@ POST /api/stripe/refund/{orderId}
 
 ```
 
-## Buyer Orders => Return Order Page 
+## Buyer => Return Order Page 
 
 ### Submit order return request:
 - **Request**:
@@ -253,11 +253,16 @@ Content-Type: application/json
 file:  ["image/jpeg", "image/png", "image/jpg", "image/webp"]
 *name field should be named "image".*
 ```
-
-### Get all shop's order requests:
+## Seller => Return Order Page 
+### Get all shop's order return requests:
 - **Request**:
 ```javascript
 GET /api/returns/orders/all/{shopId}
+```
+### decline order return request:
+- **Request**:
+```javascript
+POST /api/returns/orders/{requestId}/decline
 ```
 
 
