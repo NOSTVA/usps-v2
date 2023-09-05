@@ -272,4 +272,10 @@ GET /api/returns/orders/{requestId}
 POST /api/returns/orders/decline/{requestId}
 ```
 
+### accept order return request:
+- **Request**:
+```javascript
+POST /api/returns/orders/accept/{requestId}
+```
+
 
