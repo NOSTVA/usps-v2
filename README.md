@@ -262,7 +262,7 @@ GET /api/returns/orders/all/{shopId}
 ### decline order return request:
 - **Request**:
 ```javascript
-POST /api/returns/orders/{requestId}/decline
+POST /api/returns/orders/decline/{requestId}
 ```
 
 
