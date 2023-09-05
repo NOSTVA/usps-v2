@@ -259,6 +259,13 @@ file:  ["image/jpeg", "image/png", "image/jpg", "image/webp"]
 ```javascript
 GET /api/returns/orders/all/{shopId}
 ```
+
+### Get order return request by id:
+- **Request**:
+```javascript
+GET /api/returns/orders/{requestId}
+```
+
 ### decline order return request:
 - **Request**:
 ```javascript
