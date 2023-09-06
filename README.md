@@ -279,3 +279,9 @@ POST /api/returns/orders/accept/{requestId}
 ```
 
 
+### purchase shipping label from yallalive:
+- **Request**:
+```javascript
+POST /api/stripe/createIntent/yallalive
+```
+
