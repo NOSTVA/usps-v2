@@ -285,3 +285,16 @@ POST /api/returns/orders/accept/{requestId}
 POST /api/stripe/createIntent/yallalive
 ```
 
+
+
+### Cancel order:
+- **Request**:
+```javascript
+POST /api/stripe/cancelorder/{orderId}
+
+{
+  note: "Changed my mind"
+}
+```
+
+
